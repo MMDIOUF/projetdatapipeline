@@ -1,8 +1,8 @@
 # Projet Data Pipelines DSIA — E-Commerce Sénégal
 
-**Auteur** : Mouhamadou Makhtar DIOUF — Master 2 DSIA, ISI Dakar  
-**Email** : diagautosn221@gmail.com  
-**Deadline** : 16/04/2026 à 23h59
+**Membre du groupe** :
+Mouhamadou Makhtar DIOUF — Master 2 DSIA, ISI Dakar   
+Mamadou Moustapha Ndiaye
 
 ---
 
@@ -140,27 +140,13 @@ exchange_rate_producer.py ──► topic: taux-change
 ---
 
 ## Instructions de Déploiement
-
-### Prérequis
-
-- **Docker Desktop** >= 4.25 (RAM : 8 GB min, Disque : 10 GB libres)
-- **Python** >= 3.11
-- **Git**
-
-### 1. Cloner le repository
-
-```bash
-git clone https://github.com/VOTRE-USERNAME/projet-datapipelines-senegal.git
-cd projet-datapipelines-senegal
-```
-
-### 2. Installer les dépendances Python (local)
+### . Installer les dépendances Python (local)
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Démarrer la stack Docker
+### . Démarrer la stack Docker
 
 ```bash
 docker-compose up -d
@@ -172,7 +158,7 @@ Vérifier que tous les services sont `Up` (2-3 minutes) :
 docker-compose ps
 ```
 
-### 4. Vérifier les services
+### . Vérifier les services
 
 | Service | URL | Identifiants |
 |---|---|---|
@@ -187,14 +173,14 @@ docker-compose ps
 docker exec -it postgres psql -U dataeng -d ecommerce_senegal -c "\dt"
 ```
 
-### 5. Initialiser les données de test
+### . Initialiser les données de test
 
 ```bash
 python scripts/generate_sample_data.py
 # Résultat : 200 paiements + 30 jours de taux de change
 ```
 
-### 6. Lancer les pipelines temps réel
+### . Lancer les pipelines temps réel
 
 ```bash
 # Terminal 1 — Source 3 producer : taux de change → topic taux-change
@@ -210,7 +196,7 @@ python kafka/producers/paiement_producer.py
 python kafka/consumers/anomaly_consumer.py
 ```
 
-### 7. Déclencher le DAG Airflow (pipeline batch)
+### . Déclencher le DAG Airflow (pipeline batch)
 
 1. Ouvrir http://localhost:8080
 2. Activer `catalogue_produits_batch` (bouton ON)
@@ -219,7 +205,7 @@ python kafka/consumers/anomaly_consumer.py
 
 La dernière tâche (`exporter_minio`) publie automatiquement les résultats dans MinIO.
 
-### 8. Consulter les données
+### . Consulter les données
 
 **Marimo (dashboard réactif)** — http://localhost:2718
 
@@ -250,12 +236,7 @@ df_stats = pd.read_sql("SELECT * FROM stats_quotidiennes ORDER BY date_stats DES
 python scripts/minio_uploader.py
 ```
 
-### 9. Arrêter la stack
 
-```bash
-docker-compose down          # Conserver les volumes
-docker-compose down -v       # Supprimer toutes les données
-```
 
 ---
 
