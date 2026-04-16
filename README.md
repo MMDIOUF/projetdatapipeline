@@ -2,7 +2,7 @@
 
 **Membre du groupe** :
 Mouhamadou Makhtar DIOUF — Master 2 DSIA, ISI Dakar   
-Mamadou Moustapha Ndiaye
+Mamadou Moustapha Ndiaye  — Master 2 DSIA, ISI Dakar 
 
 ---
 
