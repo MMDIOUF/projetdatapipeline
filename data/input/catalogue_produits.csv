@@ -1,0 +1,21 @@
+produit_id,nom,categorie,prix_xof,stock,fournisseur,date_ajout
+PROD_101,Samsung Galaxy A54,Electronique,185000,50,TechDistrib Dakar,2024-01-15
+PROD_102,iPhone 13,Electronique,425000,30,iStore Senegal,2024-01-15
+PROD_103,Riz Brisure 50kg,Alimentation,18500,200,SONACOS,2024-01-10
+PROD_104,Huile vegetale 5L,Alimentation,7500,150,Patisen,2024-01-10
+PROD_105,Boubou brode homme,Mode,35000,80,Atelier Ndary,2024-02-01
+PROD_106,Basket Nike Air Max,Mode,65000,40,SportZone,2024-02-05
+PROD_107,Refrigerateur LG 350L,Electronique,275000,25,Electroplanet,2024-01-20
+PROD_108,Machine a laver Samsung,Electronique,195000,15,Auchan Dakar,2024-01-22
+PROD_109,Ballon de football Adidas,Sport,12500,100,Decathlon Almadies,2024-02-10
+PROD_110,Raquette de tennis Wilson,Sport,45000,20,Decathlon Almadies,2024-02-10
+PROD_111,Creme Fair&White,Beaute,8500,120,Pharmacie Guigon,2024-01-05
+PROD_112,Parfum Chanel N5,Beaute,85000,10,Beauty Store,2024-03-01
+PROD_113,Ordinateur portable HP,Electronique,385000,35,GTSM,2024-02-15
+PROD_114,Tablette Samsung Tab A8,Electronique,145000,60,Orange Store,2024-02-20
+PROD_115,Montre connectee Xiaomi,Electronique,35000,90,AliExpress SN,2024-03-05
+PROD_116,Canape 3 places,Maison,125000,12,Meubles Design,2024-01-25
+PROD_117,Climatiseur LG 12000 BTU,Maison,185000,18,Electroplanet,2024-01-28
+PROD_118,Livre L'Etrange Destin,Livres,5500,200,Librairie Clairafrique,2024-02-12
+PROD_119,Manuel scolaire CE2,Livres,3200,500,Editions NEAS,2024-01-08
+PROD_120,Recharge Orange 5000,Telephonie,5000,1000,Orange Money,2024-01-01

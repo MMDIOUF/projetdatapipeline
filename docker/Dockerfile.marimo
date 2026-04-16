@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+RUN pip install --no-cache-dir \
+    marimo \
+    psycopg2-binary \
+    pandas
+
+WORKDIR /app
+
+EXPOSE 2718
+
+CMD ["marimo", "run", "notebooks/marimo_dashboard.py", "--host", "0.0.0.0", "--port", "2718", "--no-token"]
